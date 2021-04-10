@@ -1,0 +1,5 @@
+division_by_zero_1.c,18,error,Uninitialized variable: f [uninitvar]
+division_by_zero_1.c,20,error,Uninitialized variable: c [uninitvar]
+division_by_zero_1.c,50,error,Uninitialized variable: n2 [uninitvar]
+division_by_zero_1.c,18,note,"Calling function 'div', 2nd argument 'f' value is <Uninit>"
+division_by_zero_1.c,50,note,Uninitialized variable: n2
