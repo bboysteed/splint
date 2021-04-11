@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
     @requirement
         - python版本大于3.5
@@ -16,15 +17,18 @@ try:
     agv = sys.argv[1]
 except IndexError:
     print("\033[32m{}\033[0m".format("""
-    error: 错误语法
+error: 错误语法
     
-    @requirement
-        - python版本大于3.5
-        - splint cppcheck有环境变量
-    @用法
-        python main.py test.c
-    """))
+@用法
+    - python main.py test.c
+
+@requirement
+    - python版本大于3.5
+    - splint cppcheck有环境变量
+"""))
     exit(1)
+
+
 if __name__ == '__main__':
     process1 = subprocess.Popen(f"splint {agv}", stdout=subprocess.PIPE, shell=True)
     process1.wait()

@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(){
     int g,a,b,c,d,e,f;
     a=98;
@@ -20,12 +22,14 @@ int main(){
         f+=c;
         b = div(e,f);
     };
+    printf("%d,%d,%d,%d,%d,%d,%d",a,b,c,d,e,f,g);
     
     
 
 return 0;
 }
 int add(int n1,int n2){
+    return n1+n2;
     return n1+n2;
 
 
@@ -47,5 +51,8 @@ int div(int n1,int n2){
     //if n2==0{
     //klee_assert(0);
     //};
+    if (n2==0){
+        printf("assss");
+    };
     return n1/n2;
 }
